@@ -23,7 +23,7 @@ console.log(getItems1(["banana", "apple"], "pear", "mango", "papaya", "orange"))
 // (6) ['banana', 'apple', 'mango', 'papaya', 'orange', 'pear']
 ```
 
-- Question 2 -> What is the output?
+- Question 3 -> What is the output?
 ```javascript
 const fn = (a, x, ...numbers, y) => {
     console.log(x, y, numbers);
