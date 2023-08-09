@@ -36,3 +36,19 @@ setTimeout(() => {
     console.log("Himanshu Sharma")
 }, 1000);
 ```
+
+## First Class Functions
+- In javascript, functions are treated as first class citizens.
+- It means that functions can be assigned to variables, passed as arguments to other functions, and also can be returned as valued from other functions.
+
+```javascript
+function square(num) {
+    return num * num;
+}
+
+function displaySquare(fn) {
+    console.log("Square is " + fn(5));
+}
+
+displaySquare(square);
+```
