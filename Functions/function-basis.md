@@ -141,14 +141,30 @@ rectangle(5); //Arguments
 ```
 
 ## Rest Parameter and Spread Operator
-- Rest parameter is used in function paramter.
-- Used to collect multiple arguments in single Array.
-- Spread Operator is used to split array or objects into individual elements.
 
 - Question 3 -> What is the output?
 ```javascript
-function add(... nums) {
-    console.log(nums[0] + nums[1]);
+const fn = (a, x, ...numbers, y) => {
+    console.log(x, y, numbers);
+};
+fn(5, 6, 3, 7, 8, 9);
+// The question is wrong as rest paramter is always passed in the end of all parameters.
+
+//The correct code is
+const fn = (a, x, y , ...numbers) => {
+    console.log(x, y, numbers);
+};
+fn(5, 6, 3, 7, 8, 9);  // 6 3 [7, 8, 9]
+```
+
+
+- Question 4 -> What is the output?
+```javascript
+function getItems1(fruitList, favouriteFruit, ...args) {
+    return [...fruitList, ...args, favouriteFruit];
+    //..args in the return statement is spread operator.
 }
+console.log(getItems1(["banana", "apple"], "pear", "mango", "papaya", "orange"));  
+// (6) ['banana', 'apple', 'mango', 'papaya', 'orange', 'pear']
 ```
 
