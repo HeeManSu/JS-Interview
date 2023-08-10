@@ -128,3 +128,37 @@ var a = 10;
     a = 13;
 console.log(a)  //Not possible
 ```
+
+## Questions
+**1) What is the output?**
+```javascript
+function  abc () {
+    console.log(a);
+
+    var a = 10;
+}
+abc();  //undefined
+```
+
+
+**2) What is the output?**
+```javascript
+function abc () {
+    console.log(a, b, c);
+
+    const c = 30;
+    const b = 20;
+    var a = 10;
+}   
+abc();  //error
+```
+
+
+**3) What is the output?**
+```javascript
+
+console.log(count);  //undefined
+let count = 1;
+var count2 = 2;  
+
+```
