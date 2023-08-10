@@ -11,7 +11,7 @@ console.log(add(3, 5))
 
 ## Difference between Arrow function and Normal function
 
-- **1) Declaration Syntax**
+ **1) Declaration Syntax**
 
 - Example -> 
 ```javascript 
@@ -28,7 +28,7 @@ const add = (a, b) => {
 console.log(add(3, 5))
 ```
 
-- **2) Implict Return Keyword**
+ **2) Implict Return Keyword**
 
 - Example -> 
 - In arrow function we can remove the return keyword. 
@@ -38,7 +38,7 @@ const add = (a, b) => a + b;
 console.log(add(3, 5))
 ```
 
-- **3) Argument keyword**
+ **3) Argument keyword**
 - We can't have argument keyword in arrow function. 
 
 - Example -> 
@@ -56,7 +56,7 @@ const fnArr = () => {
 fnArr(1,3,2);
 ```
 
-- **4) "this" keyword**
+ **4) "this" keyword**
 - this keyword inside the normal function points to the local object while this keyword inside the arrow function points to the global object.
 
 - Example ->  What is the outupt?
